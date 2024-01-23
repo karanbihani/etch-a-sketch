@@ -26,10 +26,10 @@ submit.addEventListener("click",()=>{
             const div = document.createElement("div");
             div.classList.add("no-highlight");
             div.style.width = (window.innerHeight*0.75)/sq+"px";
-            div.style.height = (window.innerHeight*0.75)/sq+"px";
+            div.style.height = (window.innerHeight*0.65)/sq+"px";
             
             //Event Listener
-            div.addEventListener("mouseover",()=>{
+            div.addEventListener("dragover",()=>{
                 div.classList.add("highlight");
                 div.classList.remove("no-highlight")
             })
